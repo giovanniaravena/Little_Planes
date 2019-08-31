@@ -19,7 +19,7 @@ public class Jugador2 : MonoBehaviour
     public GameObject bulletPrefab;
 
     [SerializeField]
-    GameObject EndGame;
+    public GameObject EndGame;
 
     public float offsetBalaX = 0;
     public float offsetBalaY = 0;
@@ -34,6 +34,7 @@ public class Jugador2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb2d2 = GetComponent<Rigidbody2D>();
         sprite2 = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -58,6 +59,8 @@ public class Jugador2 : MonoBehaviour
         
         if (life <= 0){
             EndGame.gameObject.SetActive(true);
+            //Time.timeScale = (active) ? 0 : 1f; //para pausar
+            Time.timeScale = 0f;
             Destroy(gameObject);
         }
 
