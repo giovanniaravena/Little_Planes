@@ -78,7 +78,7 @@ public class Jugador2 : MonoBehaviour
         if (transform.position.x > -9.0f && transform.position.x < 9.0f){
             float velocidadY = rb2d2.velocity.y;
             if  (Input.GetKey("a")||Input.GetKey("d"))
-                rb2d2.velocity = new Vector2(Input.GetAxis("Horizontal") * velocidadMovimiento * Time.deltaTime , velocidadY);
+                rb2d2.velocity = new Vector2(Input.GetAxis("Horizontal2") * velocidadMovimiento * Time.deltaTime , velocidadY);
         }else{
             Vector3 temp = new Vector3(transform.position.x,transform.position.y,0);
             if (transform.position.x <= -9.0f )
@@ -91,7 +91,7 @@ public class Jugador2 : MonoBehaviour
         if (transform.position.y < 4.6f){
             float velocidadX =  rb2d2.velocity.x;
             if  (Input.GetKey("w")||Input.GetKey("s"))
-                rb2d2.velocity = new Vector2(velocidadX , Input.GetAxis("Vertical") * velocidadMovimiento * Time.deltaTime);
+                rb2d2.velocity = new Vector2(velocidadX , Input.GetAxis("Vertical2") * velocidadMovimiento * Time.deltaTime);
         }
 
         //tiltAroundZ = Input.GetAxis("Vertical") * tiltAngle;
