@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class BubbleShield_ControllerP1 : MonoBehaviour
 {
-    [Range(1f, 10f)]
-    public static float timer = 6.0f;
+    //[Range(1f, 10f)]
+    public static float timer;
     // Start is called before the first frame update
     void Start()
     {
-
+       timer = 6.0f;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        timer -= Time.deltaTime;
-        if (timer <= 0){
-            Destroy(gameObject);
-        }
+   void Update()
+   {
+      timer -= Time.deltaTime;
+      if (timer <= 0){
+         Destroy(gameObject);
+      }
 
-    }
+   }
 
     void OnTriggerEnter2D(Collider2D otro){
        if (otro.gameObject.name == "BulletP1") {
@@ -45,4 +45,5 @@ public class BubbleShield_ControllerP1 : MonoBehaviour
           Destroy(gameObject);
        }
     }
+    
 }

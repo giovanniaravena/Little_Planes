@@ -10,7 +10,7 @@ public class Jugador1 : MonoBehaviour
     public float life = 100f;
     
     [Range(100f, 300f)]
-    public float velocidadMovimiento = 100f;
+    public float velocidadMovimiento = 160f;
 
     [Tooltip("Actívalo si quieres que el sprite rote automáticamente en horizontal al cambiar de dirección")]
     public bool autoRotarSprite = true;
@@ -27,6 +27,8 @@ public class Jugador1 : MonoBehaviour
     [Range(0.0f, 10.0f)]
     public float smooth = 5f;
 
+    private bool PowerUpVelocity = false;
+    private float timerPowerUpVelocity;
     private float tiltAroundZ;
     private Rigidbody2D rb2d;
     private SpriteRenderer sprite;
@@ -41,6 +43,7 @@ public class Jugador1 : MonoBehaviour
         rb2d.velocity = new Vector2( velocidadMovimiento/2 * Time.deltaTime , velocidadMovimiento/2 * Time.deltaTime);
         damage = 0.0f;
         shieldActive = false;
+        timerPowerUpVelocity = 6.0f;
     }
 
     // Update is called once per frame
@@ -61,6 +64,15 @@ public class Jugador1 : MonoBehaviour
             //Time.timeScale = (active) ? 0 : 1f; //para pausar
             Time.timeScale = 0f;
             Destroy(gameObject);
+        }
+        if(PowerUpVelocity){
+            velocidadMovimiento = 300f;
+            timerPowerUpVelocity -= Time.deltaTime;
+            if (timerPowerUpVelocity <= 0){
+                velocidadMovimiento = 160f;
+                PowerUpVelocity = false;
+                timerPowerUpVelocity = 6.0f;
+            }
         }
 
     }
@@ -153,12 +165,25 @@ public class Jugador1 : MonoBehaviour
         if (col.gameObject.name == "Biplane2") {
             Debug.Log("choque con Biplane2 ");
         }
-        if (col.gameObject.name == "SilverShield") {
+
+        if (col.gameObject.name == "SilverShield(Clone)") {
             ApplyShield();
             Destroy(col.gameObject);
         }
-        
-        
+
+        if (col.gameObject.name == "Health-Cross(Clone)") {
+            life += 30;
+            if (life>100)
+                life = 100;
+            HealthBar_P1.Health = life;
+            Destroy(col.gameObject);
+        }
+
+        if (col.gameObject.name == "Velocity-Flash(Clone)") {
+            PowerUpVelocity = true;
+            Destroy(col.gameObject);
+        }
+                
         if (col.gameObject.name == "Hills") {
             if (!shieldActive){
                 life -= 10;

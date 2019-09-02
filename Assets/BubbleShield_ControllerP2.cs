@@ -5,11 +5,11 @@ using UnityEngine;
 public class BubbleShield_ControllerP2 : MonoBehaviour
 {
     [Range(1f, 10f)]
-    public static float timer = 6.0f;
+    public static float timer;
     // Start is called before the first frame update
     void Start()
     {
-
+         timer = 6.0f;
     }
 
     // Update is called once per frame
