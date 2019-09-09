@@ -122,7 +122,7 @@ public class Jugador2 : MonoBehaviour
             transform.rotation = Quaternion.Slerp(target2, target2,  Time.fixedDeltaTime * smooth);
         }
 
-        if  (Input.GetKeyDown(KeyCode.LeftShift)){
+        if  (Input.GetKeyDown(KeyCode.LeftControl)){
             animator.SetTrigger("DisparoPlayer2");
             BulletFire();
         }

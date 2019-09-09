@@ -1,11 +1,13 @@
 Win64
 PlayerPath?
-D:/Users/giovanni/Unity Projects/Avioncitos.exe
+D:/Users/giovanni/Desktop/Little_Planes/Little Planes.exe
 SceneListBegin?
-Assets/Scenes/SampleScene.unity
+Assets/Scenes/StartMenu.unity
+Assets/Scenes/Game.unity
 SceneListEnd?
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BubbleShield_ControllerP2
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
-2c62f7b21ba3cc4830ca3ce014958841 Assembly-CSharp.dll:.Jugador2
+b1f8cea6df012d9e44c125e48f033d4e Assembly-CSharp.dll:.Jugador2
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -107,6 +109,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 00274a21279f5cb831ce20f895049e38 Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 3a60f239f99bf7ddd6b0c646bbde5447 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.TrackedDeviceRaycaster
+37ed34899c7b9ff5ce87742fd3a187c5 Assembly-CSharp.dll:.HealthBar_P1
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -122,6 +125,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 6adf0680d8d7e110dab1c5470b12851b Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputActionDebuggerWindow
+f92b3281f03c4283afedcb1dbea0e7f6 Assembly-CSharp.dll:.PowerUps
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 120871ca56b8aa51d11cf72c9e31f296 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UIActionInputModule
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -131,12 +135,13 @@ b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 9a106d3a8020379b4f98d3c111298968 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.PlayerInput.PlayerInput
 7f9c9c0c2ddd3de046f36ccb615371ef Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UITouchInputModule
 57a59b9e39dd07878020ae5819f163a3 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputSettings
-9544cc3fef5f99cceca9276a54b46960 Assembly-CSharp.dll:.Bullet_Controller
+9544cc3fef5f99cceca9276a54b46960 Assembly-CSharp.dll:.Bullet_Controller_P1
 fc4659575ffc7614e5d042b0a0014c54 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.PlayerInput.Editor.PlayerInputEditor
 8a1511edcfd269b6938dd016efe00da5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UIGamepadInputModule
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+9544cc3fef5f99cceca9276a54b46960 Assembly-CSharp.dll:.Bullet_Controller_P2
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 635fe9f95d92a3b2fc685a5acec976fc Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputStateWindow
 bdcd612e570989effb1e97c07449c801 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.HID.Editor.HIDDescriptorWindow
@@ -177,17 +182,20 @@ fbf2b0aa6fc0e8b1fb2162c7fd153c81 Unity.InputSystem.dll:UnityEngine.Experimental.
 ee0cef6caaac8ae485bfa82f000f0f7b Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+37ed34899c7b9ff5ce87742fd3a187c5 Assembly-CSharp.dll:.HealthBar_P2
 7f9c9c0c2ddd3de046f36ccb615371ef Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.UI.UIKeyboardMouseInputModule
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.EndGame
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputActionImporterEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputActionAssetEditor
 892803c092b9dc58897616d0c0abc4d3 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.InputDebuggerWindow
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 6adf0680d8d7e110dab1c5470b12851b Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.AdvancedDropdownWindow
-40293e07a0c9723a6ff13d4974f7973e Assembly-CSharp.dll:.Jugador1
+b1f8cea6df012d9e44c125e48f033d4e Assembly-CSharp.dll:.Jugador1
 5372ed2ce39229b1ac910757999a8be2 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 6adf0680d8d7e110dab1c5470b12851b Unity.InputSystem.dll:UnityEngine.Experimental.Input.Editor.BindingPropertiesPopup
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-054c11ebe7357ca64685056210b17e5a Assembly-CSharp.dll:.Shield_Controller
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BubbleShield_ControllerP1
 110f2a0070b3187e958f66f02acd4fc7 Unity.InputSystem.dll:UnityEngine.Experimental.Input.Plugins.OnScreen.Editor.OnScreenButtonEditor
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MainMenu
 1994f8b165cd1b6e4b1669e09b537fa5 Unity.InputSystem.dll:UnityEngine.Experimental.Input.InputSystemObject
